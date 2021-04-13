@@ -23,6 +23,7 @@ public class Search {
         /*
          * https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/ 3번 순위검색
          * 1차원 배열로 문제 풀이
+         * 완전탐색(비트마스크)
          * hashMap
          * bit 연산을 이용한 부분집합
          * 이진탐색(binary search) / Lower Bound
@@ -59,7 +60,7 @@ public class Search {
             int score = Integer.parseInt(word[4]);
 
             //부분집합(binarySearch)
-            for(int i = 0; i<(1<<arr.length); i++){ //부분집합의 경우의 수를 확인
+            for(int i = 0; i<(1<<arr.length); i++){ //부분집합의 경우의 수를 확인 (비트연산 << n는 왼쪽으로 n만큼 왼쪽으로 시프트한다. 2의 n승을 의미한한다.)
                 int idx = 0;
                 for(int j = 0; j < arr.length; j++){ //부분집합 생성
                     if((i & (1<<j)) != 0){
