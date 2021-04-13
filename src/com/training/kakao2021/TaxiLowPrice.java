@@ -34,7 +34,7 @@ public class TaxiLowPrice {
 
     public static int solution(int n, int s, int a, int b, int[][] fares){ //n : 지점갯수 / s : 출발지점 / a : 목적지1 / b : 목적지2 / fares(간선)
         /*
-         * https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/ 3번 합승택시요금
+         * TODO https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/ 4번 합승택시요금
          * 완전탐색(참조 : https://rebro.kr/59)
          * 플로이드 와샬(Floyd Warshall) 알고리즘(참조 : https://blog.naver.com/ndb796/221234427842)
          */

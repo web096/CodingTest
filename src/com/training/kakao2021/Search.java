@@ -21,7 +21,7 @@ public class Search {
     public static int[] solution(String[] info, String[] query){
 
         /*
-         * https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/ 3번 순위검색
+         * TODO https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/ 3번 순위검색
          * 1차원 배열로 문제 풀이
          * 완전탐색(비트마스크)
          * hashMap
