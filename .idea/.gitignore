@@ -8,3 +8,5 @@
 /httpRequests/
 # compile
 *.class
+# workspace.xml
+workspace.xml
