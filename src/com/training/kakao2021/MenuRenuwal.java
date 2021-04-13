@@ -19,7 +19,7 @@ public class MenuRenuwal {
 
     public static String[] solution(String[] orders, int[] course){
         /*
-         * https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/ 2번 메뉴리뉴얼
+         * TODO https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/ 2번 메뉴리뉴얼
          */
 
         for(int i=0; i<11; i++){
