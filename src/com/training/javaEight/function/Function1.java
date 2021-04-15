@@ -5,6 +5,13 @@ import java.util.function.Function;
 public class Function1 {
 
     /*
+    * 모든 함수 공통
+    * 함수형 인터페이스는 불필요한 자원 낭비를 방지한다.
+    * Lazy Evaluation이란 정말 계산이 필요한 시점까지 결과값 도출을 미룬다.
+    * (참조 : https://medium.com/@goinhacker/lazy-evaluation%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-c6789ac2173c)
+    * */
+
+    /*
     @FunctionalInterface
     Function<T,R>
     T타입을 받아 R타입으로 변형하여 리턴한다. T -> R(R apply(T t))
