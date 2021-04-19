@@ -1,5 +1,9 @@
 package com.training.javaEight.function;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
 
 public class Function1 {
@@ -41,6 +45,32 @@ public class Function1 {
         String identityStr = identity.apply("나는 개발자");
         System.out.println(identityStr);
 
+        //exmple Function을 이용해서 HashMap의 value를 List형태로 변환
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("A",100);
+        map.put("B",10000);
+        map.put("C",1384000);
+        map.put("D",1010);
+        map.put("E",48392);
+
+        List<String> resultList = MapIntegerToListString(map);
+
+        resultList.forEach(System.out::println);
+    }
+
+    public static List<String> MapIntegerToListString(HashMap<String, Integer> paramMap){
+        Function<HashMap<String, Integer>, List<String>> toList = (map) -> {
+
+            List<String> list = new ArrayList<>();
+
+            for(Map.Entry<String, Integer> fromMap : map.entrySet()){
+                String value = String.valueOf(fromMap.getValue());
+                list.add(value);
+            }
+            return list;
+        };
+
+        return toList.apply(paramMap);
     }
 
 }
