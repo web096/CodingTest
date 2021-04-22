@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 
-public class Function1 {
+public class FunctionExample {
 
     /*
     * 모든 함수 공통
@@ -56,6 +56,7 @@ public class Function1 {
         List<String> resultList = MapIntegerToListString(map);
 
         resultList.forEach(System.out::println);
+
     }
 
     public static List<String> MapIntegerToListString(HashMap<String, Integer> paramMap){

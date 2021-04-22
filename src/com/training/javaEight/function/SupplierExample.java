@@ -3,7 +3,7 @@ package com.training.javaEight.function;
 import java.time.LocalTime;
 import java.util.function.Supplier;
 
-public class Function4 {
+public class SupplierExample {
     /*
     @FunctionalInterface
     Supplier<T>

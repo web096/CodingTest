@@ -2,7 +2,7 @@ package com.training.javaEight.function;
 
 import java.util.function.Consumer;
 
-public class Function2 {
+public class ConsumerExample {
 
     /*
     @FunctionalInterface
